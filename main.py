@@ -4,6 +4,7 @@ import openai
 from textwrap import dedent
 import subprocess
 import json
+import readline
 
 def prompt_anthropic(prompt: str) -> str:
     c = anthropic.Client(os.environ["ANTHROPIC_API_KEY"])
